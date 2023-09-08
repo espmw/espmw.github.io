@@ -1,0 +1,14 @@
+body.day_mode{
+
+}
+
+body.night_mode{
+    /*the color theme for when night mode is selected */
+}
+
+body.type_base{
+    /*styles regarding typographical properties, sans color*/
+    font-family: 'Kanit', sans-serif;
+    font-size: 32px;
+}
+
