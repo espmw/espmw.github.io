@@ -81,9 +81,11 @@
 
                 elm_eg_lnk.addEventListener("click", function(){
                     if(b_activated_style){
-                        elm_eg_lnk.classList.remove(g_animation_style_one);     
+                        elm_eg_lnk.classList.remove(g_animation_style_one); 
+                        console.log("eg 1 is off");    
                     }else{
                         elm_eg_lnk.classList.add(g_animation_style_one);
+                        console.log("eg 1 is on");
                     } 
 
                     //less verbose but perhaps slower
