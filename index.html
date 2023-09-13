@@ -69,11 +69,11 @@
             display: inline-block;
         }
     </style>
-
+    <script src="fx_list.js"></script>
     <script>
         /**
          * @param {string} target_id
-         * @return {DOMElement} the resolved element in the dom tree
+         * @return {Element} the resolved element in the dom tree
          */
         const fn_resolve_fx_list = (target_id)=>{
             //it doesn't create the fx list element, rather it finds the existing one
@@ -82,7 +82,7 @@
 
         /**
          * 
-         * @param {DOMElement} elm_fx_list_container
+         * @param {Element} elm_fx_list_container
          * @param {string} title supplies the title
          * @param {string} descriptor supplies the descriptor (the part that appears when info is expanded)
          * @param {string} css_style is the parameter that supplies the style name to toggle (the effect)
@@ -102,6 +102,8 @@
 
         const g_animation_style_one = "animdir_eg_1";
         document.addEventListener("DOMContentLoaded", ()=>{
+
+            let a = fn_resolve_fx_list("test").querySelector
             //in 2023, DOM standard supported jquery like queries.
             let b_activated_style = false;
             let elm_eg_lnk = document.getElementById("example_1");
