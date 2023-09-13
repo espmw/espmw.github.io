@@ -71,24 +71,22 @@
     </style>
 
     <script>
-        const fn_resolve_fx_list = (str_targetid)=>{
+        /**
+         * @param {string} target_id
+         * @return {DOMElement} the resolved element in the dom tree
+         */
+        const fn_resolve_fx_list = (target_id)=>{
             //it doesn't create the fx list element, rather it finds the existing one
         };
 
-        //creates new elements that are attached to fx_list element.
-        //@param elm_fx_list_container the fx_list container that these fx_items are attached to.
-        //@param str_css_style is the parameter that supplies the style name to toggle (the effect)
-        //@param str_title supplies the title
-        //@param str_descriptor supplies the descriptor (the part that appears when info is expanded)
-        //@return bool true when it succeeds.
 
         /**
          * 
          * @param {DOMElement} elm_fx_list_container
-         * @param {string} title
-         * @param {string} descriptor
-         * @param {string} css_style
-         * @return {bool}
+         * @param {string} title supplies the title
+         * @param {string} descriptor supplies the descriptor (the part that appears when info is expanded)
+         * @param {string} css_style is the parameter that supplies the style name to toggle (the effect)
+         * @return {bool} true when it succeeds.
          */
         const fn_create_fx_item = (fx_list_container, title, descriptor, css_style)=>{
             //clones a template of an fx_item element, which is a li (list item).
