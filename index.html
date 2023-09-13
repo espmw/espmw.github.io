@@ -81,7 +81,16 @@
         //@param str_title supplies the title
         //@param str_descriptor supplies the descriptor (the part that appears when info is expanded)
         //@return bool true when it succeeds.
-        const fn_create_fx_item = (elm_fx_list_container, str_title, str_descriptor, str_css_style)=>{
+
+        /**
+         * 
+         * @param {DOMElement} elm_fx_list_container
+         * @param {string} title
+         * @param {string} descriptor
+         * @param {string} css_style
+         * @return {bool}
+         */
+        const fn_create_fx_item = (fx_list_container, title, descriptor, css_style)=>{
             //clones a template of an fx_item element, which is a li (list item).
 
             //applies the new title
