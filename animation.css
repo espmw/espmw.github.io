@@ -26,7 +26,7 @@ body.fade-bg-animation{
 
 .anim_3d_img{
     animation-name: svg_repeating;
-    animation-duration: 5s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -38,6 +38,6 @@ body.fade-bg-animation{
     }
 
     to{
-        height: 64px;
+        height: 16px;
     }
 }
