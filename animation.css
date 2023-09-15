@@ -1,0 +1,25 @@
+body.fade-bg-animation{
+    animation-duration: 5s;
+    animation-name: bg_color_shift;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+
+.animdir_eg_1{
+    animation-duration: 1s !important;
+    animation-direction: normal;
+}
+
+@keyframes bg_color_shift {
+    0%{
+        background-color: #FACA9B;
+    }
+
+    50%{
+        background-color: #FAA98E;
+    }
+    
+    100%{
+        background-color: #A7FABF;
+    }
+}

@@ -8,72 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="svg_styles_1.css">
     <style>
-        body{
-            animation-duration: 5s;
-            animation-name: bg_color_shift;
-            animation-iteration-count: infinite;
-            animation-direction:alternate;
-        }
-
-        .animdir_eg_1{
-            animation-duration: 1s !important;
-            animation-direction: normal;
-        }
-
-        @keyframes bg_color_shift {
-            0%{
-                background-color: #FACA9B;
-            }
-
-            50%{
-                background-color: #FAA98E;
-            }
-            
-            100%{
-                background-color: #A7FABF;
-            }
-        }
-
-        span.globe-v1{
-            width: 64px;
-            height: 64px;
-            display: inline-block;
-        }
-
-        span.globe-v1{
-            background-image: url("ico-shape-no-background.svg");
-            width: 64px;
-            height: 64px;
-            display: inline-block;
-        }
-
-        span.globe-v2{
-            background-image: url("ico-shape-no-background.2.svg");
-            width: 64px;
-            height: 64px;
-            display: inline-block;
-        }
-
-        span.globe-v3{
-            background-image: url("ico-shape-no-background.3.svg");
-            width: 64px;
-            height: 64px;
-            display: inline-block;
-        }
-
-        span.globe-v4{
-            background-image: url("tglobe.1.svg");
-            width: 64px;
-            height: 64px;
-            display: inline-block;
-        }
-
-        div.rasterized-3d-img{
-            background-image: url("t2.svg");
-            width: 256px;
-            height: 256px;
-        }
+        /*CSS stuff*/
     </style>
     <script src="fx_list.js"></script>
     <script>
@@ -136,13 +74,14 @@
         });
     </script>
 </head>
-<body class="type_base">
+<body class="type_base fade-bg-animation">
     <p>
         fps counter: <span class="fps-counter"></span>
     </p>
     <p>
         <span class="globe-v1"></span> <span class="globe-v2"></span><span class="globe-v3"></span><span class="globe-v4"></span>
     </p>
+    <h5>image of a 3d rendered scene traced into vectors: </h5>
     <div class="rasterized-3d-img"></div>
     <ul class="fx-list">
         <li class="fx-item">
