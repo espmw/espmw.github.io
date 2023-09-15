@@ -23,3 +23,20 @@ body.fade-bg-animation{
         background-color: #A7FABF;
     }
 }
+
+.anim_3d_img{
+    animation-name: svg_repeating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes svg_repeating {
+    from{
+        height: 254px;
+    }
+
+    to{
+        height: 64px;
+    }
+}
