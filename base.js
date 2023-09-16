@@ -54,4 +54,17 @@ document.addEventListener("DOMContentLoaded", ()=>{
         });
     }
 
+    //cache (compute once, save the result) strategy
+    let elm_fps_counter = document.querySelector(".fps-counter");
+    
+    
+    //fps counter
+    const perFrame = (param)=>{
+        elm_fps_counter.innerHTML = "param val: " + param;
+        //window.requestAnimationFrame(perFrame);
+    }
+
+    //makes the first callback request for the
+    window.requestAnimationFrame(perFrame);
+
 });
