@@ -1,57 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="animation.css">
-    <link rel="stylesheet" href="svg_styles_one.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="svg_styles_one.css" />
     <style>
-        /*CSS stuff*/
+      /*CSS stuff*/
 
-        div.flex-centre{
-            display: flex;
-            flex-flow: row;
-            align-items: center;
-            justify-content: center;
-        }
+      div.flex-centre{
+          display: flex;
+          flex-flow: row;
+          align-items: center;
+          justify-content: center;
+      }
     </style>
     <script src="fx_list.js"></script>
     <script src="base.js"></script>
-    <script>
-        
-    </script>
+    <script></script>
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W8HG0QKDT8"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-W8HG0QKDT8"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-W8HG0QKDT8');
+      gtag("config", "G-W8HG0QKDT8");
     </script>
-</head>
-<body class="type_base fade-bg-animation">
-    <p>
-        fps counter: <span class="fps-counter"></span>
-    </p>
+  </head>
+  <body class="type_base fade-bg-animation">
+    <p>fps counter: <span class="fps-counter"></span></p>
     <div class="flex-centre">
-        <span class="globe-v1"></span> <span class="globe-v2"></span><span class="globe-v3"></span><span class="globe-v4"></span>
+      <span class="globe-v1"></span> <span class="globe-v2"></span
+      ><span class="globe-v3"></span><span class="globe-v4"></span>
     </div>
 
     <ul class="fx-list">
-        <li class="fx-item">
-            <span class="descriptor"><a href="#" id="example_1">normal direction, periodicity is 1 hz (*has fast flashing effect*).</a></span>
-            <span class="extened"><!--todo: --></span>
-        </li>
+      <li class="fx-item">
+        <span class="descriptor"
+          ><a href="#" id="example_1"
+            >normal direction, periodicity is 1 hz (*has fast flashing
+            effect*).</a
+          ></span
+        >
+        <span class="extened"><!--todo: --></span>
+      </li>
     </ul>
 
-    <h5>image of a 3d rendered scene traced into vectors: </h5>
+    <h5>image of a 3d rendered scene traced into vectors:</h5>
     <div class="rasterized-3d-img"></div>
-</body>
+  </body>
 </html>
