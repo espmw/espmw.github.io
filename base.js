@@ -49,15 +49,16 @@ document.addEventListener("DOMContentLoaded", () => {
   //cache (compute once, save the result) strategy
   let elm_fps_counter = document.querySelector(".fps-counter");
 
-  let old_param = 0, tmp;
+  let old_param = 0, tmp, fps_min = 999999, fps_max = 0, fps_avg;
   //fps counter
   const perFrame = (param) => {
     
     tmp = param;
     param = param - old_param;
     old_param = tmp;
-
-    elm_fps_counter.innerHTML = "param val: " + (1000/param) + "fps";
+    fps_min = fps_min > param ? param : fps_min;
+    fps_max = fps_max < param ? param: fps_max;
+    elm_fps_counter.innerHTML = "param val: " + (1000/param) + `fps (min ${fps_min}, max ${fps_max})` ;
     
     window.requestAnimationFrame(perFrame);
   };
