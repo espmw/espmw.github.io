@@ -82,3 +82,32 @@ document.addEventListener("DOMContentLoaded", () => {
   //makes the first callback request for the
   window.requestAnimationFrame(perFrame);
 });
+
+class CSSToggler{
+  constructor(){
+    this.listener = ()=>{
+
+    }
+  }
+
+  get listener(){
+    return this.listener;
+  }
+}
+
+class LinkToggler{
+  constructor(elm_link, fn_toggle){
+    this.elm_link = elm_link;
+    this.fn_toggle = fn_toggle;
+
+    this.initDOM();
+  }
+
+  initDOM(){
+    //find the dom element that is going to be clicked on
+    //attach event handler
+    this.elm_link.addEventListener("click", (e)=>{
+
+    });
+  }
+}
