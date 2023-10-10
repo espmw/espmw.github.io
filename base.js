@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     let param_display = Math.round(param * 100) / 100;
-    elm_fps_counter.innerHTML = (1000/param) + `fps (min ${fps_min}, max ${fps_max}, avg ${fps_avg})` ;
+    elm_fps_counter.innerHTML = (1000/param_display) + `fps (min ${fps_min}, max ${fps_max}, avg ${fps_avg})` ;
     
     window.requestAnimationFrame(perFrame);
   };
