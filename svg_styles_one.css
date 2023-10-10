@@ -37,3 +37,15 @@ div.rasterized-3d-img{
     width: 256px;
     height: 254px;
 }
+
+.svg-round{
+    background-image: url("round.svg");
+    width: 128px;
+    height: 128px;
+}
+
+.svg-glyphs{
+    background-image: url("rando0-1.svg");
+    width: 128px;
+    height: 128px;    
+}
