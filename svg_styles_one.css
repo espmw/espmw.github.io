@@ -46,6 +46,6 @@ div.rasterized-3d-img{
 
 .svg-glyphs{
     background-image: url("rando-1.v2.svg");
-    width: 1vw;
-    height: auto;   
+    width: 512px;
+    height: 512px;   
 }
