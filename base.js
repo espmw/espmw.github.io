@@ -20,6 +20,10 @@ const fn_create_fx_item = (fx_list_container, title, descriptor, css_style) => {
   //applies the new descriptor
 };
 
+const reduce_to_2decimals = (value)=>{
+  Math.round(1000/value)
+}
+
 const g_animation_style_one = "animdir_eg_1";
 document.addEventListener("DOMContentLoaded", () => {
   //let a = fn_resolve_fx_list("test").querySelector
@@ -66,8 +70,11 @@ document.addEventListener("DOMContentLoaded", () => {
       fps_avg = (param + fps_avg)/2;
     }
 
-    let param_display = Math.round(1000/param);
-    elm_fps_counter.innerHTML = (param_display) + `fps (min ${fps_min}, max ${fps_max}, avg ${fps_avg})` ;
+    let param_display = reduce_to_2decimals(1000/param);
+    let display_fps_min = reduce_to_2decimals(1000/fps_min);
+    let display_fps_max = reduce_to_2decimals(1000/fps_max);
+    let display_fps_avg = reduce_to_2decimals(1000/fps_avg);
+    elm_fps_counter.innerHTML = (param_display) + `fps (min ${display_fps_min}, max ${display_fps_max}, avg ${display_fps_avg})` ;
     
     window.requestAnimationFrame(perFrame);
   };
