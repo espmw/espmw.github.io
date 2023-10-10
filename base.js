@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //cache (compute once, save the result) strategy
   let elm_fps_counter = document.querySelector(".fps-counter");
 
-  let old_param = 0, tmp, fps_min = 999999, fps_max = 0, fps_avg;
+  let old_param = 0, tmp, fps_min = 999999, fps_max = 0, fps_avg = 0;
   //fps counter
   const perFrame = (param) => {
     
@@ -58,6 +58,14 @@ document.addEventListener("DOMContentLoaded", () => {
     old_param = tmp;
     fps_min = fps_min > param ? param : fps_min;
     fps_max = fps_max < param ? param: fps_max;
+
+    //rolling average computation
+    if(fps_avg == 0){
+      fps_avg = param;
+    }else{
+      fps_avg = (param + fps_avg)/2
+    }
+
     elm_fps_counter.innerHTML = (1000/param) + `fps (min ${fps_min}, max ${fps_max})` ;
     
     window.requestAnimationFrame(perFrame);
