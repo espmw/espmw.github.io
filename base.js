@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
     old_param = tmp;
     fps_min = fps_min > param ? param : fps_min;
     fps_max = fps_max < param ? param: fps_max;
-    elm_fps_counter.innerHTML = "param val: " + (1000/param) + `fps (min ${fps_min}, max ${fps_max})` ;
+    elm_fps_counter.innerHTML = (1000/param) + `fps (min ${fps_min}, max ${fps_max})` ;
     
     window.requestAnimationFrame(perFrame);
   };
