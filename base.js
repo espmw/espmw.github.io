@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     param = param - old_param;
     old_param = tmp;
 
-    elm_fps_counter.innerHTML = "param val: " + (param/1000) + "fps";
+    elm_fps_counter.innerHTML = "param val: " + (1000/param) + "fps";
     
     window.requestAnimationFrame(perFrame);
   };
