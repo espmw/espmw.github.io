@@ -21,7 +21,7 @@ const fn_create_fx_item = (fx_list_container, title, descriptor, css_style) => {
 };
 
 const reduce_to_2decimals = (value)=>{
-  Math.round(value*100.0)/100.0
+  return Math.round(value*100.0)/100.0;
 }
 
 const g_animation_style_one = "animdir_eg_1";
