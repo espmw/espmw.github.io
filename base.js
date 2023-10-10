@@ -49,9 +49,16 @@ document.addEventListener("DOMContentLoaded", () => {
   //cache (compute once, save the result) strategy
   let elm_fps_counter = document.querySelector(".fps-counter");
 
+  let old_param = 0, tmp;
   //fps counter
   const perFrame = (param) => {
+    
+    tmp = param;
+    param = param - old_param;
+    old_param = tmp;
+
     elm_fps_counter.innerHTML = "param val: " + param;
+    
     window.requestAnimationFrame(perFrame);
   };
 
