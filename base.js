@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //fps counter
   const perFrame = (param) => {
     elm_fps_counter.innerHTML = "param val: " + param;
-    //window.requestAnimationFrame(perFrame);
+    window.requestAnimationFrame(perFrame);
   };
 
   //makes the first callback request for the
