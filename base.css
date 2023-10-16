@@ -1,3 +1,19 @@
+:root{
+
+    --color-1: #dedad7;
+    --color-2: #b5bfd0;
+    --color-3: #e6e2d9;
+    --color-4: #e1a8b1;
+}
+
+.theme-forest{
+    --color-1: #bec3be;
+    --color-2: #dfe2d9;
+    --color-3: #b0beba;
+    --color-4: #a7b2b1;
+}
+
+
 body.day_mode{
 
 }
